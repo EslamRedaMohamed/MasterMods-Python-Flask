@@ -1,0 +1,9 @@
+/* style.css */
+
+/* Add a background image to the body */
+body {
+    background-image: url('/static/images/car.jpg'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Keeps the image fixed during scrolling */
+}

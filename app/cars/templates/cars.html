@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Cars
+{% endblock  %}
+
+
+{% block content %}
+{% if cars%}
+    <div class="d-flex gap-3 flex-row flex-wrap">
+        {% for car in cars %}
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+            <h5 class="card-title">{{car.name}}</h5>
+            <p class="card-text">{{product.modifications}}</p>
+            </div>
+        </div>
+    {% endfor %}
+    </div>
+{% else %}
+    <div class="container">
+        <h1 class="text-center" style="background-color: rgba(255, 165, 0, 0.8); color: white; padding: 15px; border-radius: 5px;">
+            There are no cars added yet!!
+        </h1>
+    </div>
+{% endif %}
+{% endblock  %}
